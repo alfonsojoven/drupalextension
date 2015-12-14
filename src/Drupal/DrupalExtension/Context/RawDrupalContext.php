@@ -468,7 +468,7 @@ class RawDrupalContext extends RawMinkContext implements DrupalAwareInterface {
 
     // Log in.
     $submit->click();
-
+    /*
     if (!$this->loggedIn()) {
       if (isset($this->user->role)) {
         throw new \Exception(sprintf("Unable to determine if logged in because 'log_out' link cannot be found for user '%s' with role '%s'", $this->user->name, $this->user->role));
@@ -476,7 +476,7 @@ class RawDrupalContext extends RawMinkContext implements DrupalAwareInterface {
       else {
         throw new \Exception(sprintf("Unable to determine if logged in because 'log_out' link cannot be found for user '%s'", $this->user->name));
       }
-    }
+    }*/
   }
 
   /**
